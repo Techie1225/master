@@ -44,7 +44,7 @@ public class jscontroller {
 	@PostMapping("/add")
 	public String addingtodb(@ModelAttribute("jsdata") job_seeker_data jdata ) throws IOException {
 		System.out.println("in post add");
-		String filestore="C://store";
+		String filestore=env.getRequiredProperty("upload.store");
 		File file=new File(filestore);
 		if(!file.exists())
 			file.mkdir();

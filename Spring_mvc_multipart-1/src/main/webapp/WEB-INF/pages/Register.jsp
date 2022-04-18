@@ -12,7 +12,7 @@
 <br>
 <br>
 <br>
-<cm:form enctype="multipart/form-data" modelAttribute="jsdata">
+<cm:form modelAttribute="jsdata" enctype="multipart/form-data">
 <table border="0" bgcolor="cyan" align="center">
 <tr>
 <td>Name  </td>
